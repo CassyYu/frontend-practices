@@ -32,7 +32,7 @@ body,
 }
 
 .navbar input:checked ~ ul {
-    width: 300px;
+    width: 420px;
 }
 
 .navbar input:checked ~ span:nth-child(2) {

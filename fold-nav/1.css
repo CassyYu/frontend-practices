@@ -38,6 +38,7 @@ body,
 .navbar input:checked ~ span:nth-child(2) {
     top: calc(50% - 2px);
     transform: rotate(45deg);
+    background-color: #fb7288;
     border-color: #fb7288;
     transition: top .3s ease-in-out, transform .3s ease-in-out 0.3s;
 }
@@ -45,6 +46,7 @@ body,
 .navbar input:checked ~ span:nth-child(3) {
     top: calc(50% - 2px);
     transform: rotate(-45deg);
+    background-color: #fb7288;
     border-color: #fb7288;
     transition: top .3s ease-in-out, transform .3s ease-in-out 0.3s;
 }

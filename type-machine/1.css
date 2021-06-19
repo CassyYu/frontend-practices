@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.text {
+    width: 552px;
+    border-right: 1px solid #000;
+    overflow: hidden;
+    /* animation: blink 2s linear 0 infinite normal none; */
+    animation: move 4s steps(40) 1s normal both,
+    blink 500ms steps(40) infinite normal;
+}
+
+@keyframes move {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 552px;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-right-color: #000;
+    }
+    to {
+        border-right-color: transparent;
+    }
+}

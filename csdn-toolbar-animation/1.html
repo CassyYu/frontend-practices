@@ -25,7 +25,7 @@
         let $more = document.getElementsByClassName("more");
         console.log($more);
         let $arrow = document.getElementsByClassName("arrow");
-        $more[0].addEventListener("mouseenter", function(){
+        $more[0].addEventListener("mouseover", function(){
             $arrow[0].setAttribute("style", "transform: rotate(180deg); transition: 0.4s");
         });
         $more[0].addEventListener("mouseout", function() {

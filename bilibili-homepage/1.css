@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: blanchedalmond;
+    font: 12px -apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,sans-serif;
+}
+
+ul,
+li {
+    list-style-type: none;
+    list-style: none;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+.header {
+    width: 100%;
+    position: relative;
+}
+
+.header-banner {
+    height: 158px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    background-image: url(https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3206689113,2237998950&fm=26&gp=0.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header-toolbar {
+    height: 36px;
+    padding: 10px 24px;
+    position: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+}
+
+.toolbar-left-list {
+    width: 40%;
+    height: 36px;
+    display: flex;
+    align-items: center;
+}
+
+.toolbar-left-item {
+    text-align: left;
+    flex-grow: 1;
+}
+
+.search-bar {
+    height: 36px;
+    width: 32%;
+    background-color: #fff;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar-input {
+    overflow: hidden;
+    height: 34px;
+    width: 100%;
+    padding: 0 5px 0 20px;
+    background-color: transparent;
+    font-size: 14px;
+}
+
+.search-btn-bg {
+    height: 36px;
+    width: 60px;
+    border-radius: 2px;
+    background-color: #ddd;
+    position: relative;
+}
+
+.search-btn {
+    position: absolute;
+    top: 8px;
+    right: 18px;
+    border: none;
+    background: none;
+    line-height: 20px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.search-btn:hover {
+    color: teal;
+}
+
+.search-btn::before {
+    content: "@";
+}
+
+.toolbar-right-list {
+    width: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.toolbar-right-item {
+    text-align: right;
+    flex-grow: 1;
+}
+
+.upload {
+    line-height: 36px;
+    margin-left: 14px;
+    display: block;
+    width: 100px;
+    height: 36px;
+    background-color: #fb7299;
+    border-radius: 1px;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+}

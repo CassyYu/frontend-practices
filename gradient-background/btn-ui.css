@@ -9,9 +9,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: no-repeat linear-gradient(125deg, #468, #684, #868, #d64);
-    background-size: 400%;
-    animation: bgAnimation 15s infinite;
 }
 
 span {
@@ -25,8 +22,9 @@ span {
     width: 400px;
     height: 60px;
     border-radius: 30px;
-    background-color: #ccc;
-    opacity: 25%;
+    background: no-repeat linear-gradient(125deg, #468, #684, #868, #d64);
+    background-size: 400%;
+    animation: bgAnimation 15s infinite;
 }
 
 

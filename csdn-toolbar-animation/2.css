@@ -16,7 +16,7 @@ li {
     width: 100%;
 }
 
-.list {
+.toolbar ul {
     margin: 0;
     padding: 0;
     height: 50px;
@@ -26,22 +26,22 @@ li {
     justify-content: space-around;
 }
 
-.item {
+.toolbar ul li {
     margin: auto;
     padding: 8px 40px;
 }
 
-.item:hover {
+.toolbar ul li:hover {
     background-color:rgb(236, 229, 236);
     border-radius: 10px;
 }
 
-.item:hover>.arrow {
-    transform: rotate(180deg);
-}
-
-.arrow {
+.toolbar ul li img {
     height: 12px;
     width: 15px;
     transition: 0.4s;
+}
+
+.toolbar ul li:hover>img {
+    transform: rotate(180deg);
 }

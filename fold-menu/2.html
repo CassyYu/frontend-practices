@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>fold-menu-2</title>
+    <link rel="stylesheet" href="./2.css">
+    <link rel="stylesheet" href="../package/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+        <ul id="container">
+            <li>
+                <a href="javascript:void(0)">
+                    <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                    <span class="title">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <span class="icon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                    <span class="title">About</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <span class="icon"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                    <span class="title">Article</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <span class="icon"><i class="fa fa-bookmark" aria-hidden="true"></i></span>
+                    <span class="title">Tag</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <span class="icon"><i class="fa fa-inbox" aria-hidden="true"></i></span>
+                    <span class="title">Catagory</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <span class="icon"><i class="fa fa-archive" aria-hidden="true"></i></span>
+                    <span class="title">Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <span class="icon"><i class="fa fa-comments" aria-hidden="true"></i></span>
+                    <span class="title">Contact</span>
+                </a>
+            </li>
+        </ul>
+        <div class="toggle-container">
+            <input type="checkbox" id="flag"/>
+            <span class="toggle fold"><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
+            <span class="toggle unfold"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+        </div>
+        <script>
+            const $flag = document.getElementById("flag");
+            const $container = document.getElementById("container");
+            $flag.addEventListener("mousedown", function() {
+                $flag.checked ? $container.setAttribute("style", "width: auto") : $container.setAttribute("style", "width: 20px");
+                $flag.checked = !flag.checked;
+            });
+        </script>
+</body>
+
+</html>
